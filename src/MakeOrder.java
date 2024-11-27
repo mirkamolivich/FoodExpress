@@ -1,7 +1,7 @@
 public class MakeOrder {
     String name;
-    int quantity;
-    public MakeOrder(String name, int quantity) {
+    double quantity;
+    public MakeOrder(String name, double quantity) {
         this.name = name;
         this.quantity = quantity;
     }
@@ -12,10 +12,9 @@ public class MakeOrder {
         this.name = name;
     }
 
-    public int getQuantity() {
+    public double getQuantity() {
         return quantity;
     }
-
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
