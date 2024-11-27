@@ -62,7 +62,7 @@ public class Food {
         this.quantity = quantity;
     }
     public void showFoodData(){
-        System.out.printf("Country: %s\nName: %s\nPrice: %s\nQuantity: %s", countryOfFood, nameOfFood, priceOfFood, quantity);
+        System.out.printf(" ID : Country: %s\nName: %s\nPrice: %s\nQuantity: %s" ,id, countryOfFood, nameOfFood, priceOfFood, quantity);
 
     }
 }
