@@ -61,8 +61,10 @@ public class Food {
         this.priceOfFood = priceOfFood;
         this.quantity = quantity;
     }
-    public void showFoodData(){
-        System.out.printf(" ID : Country: %s\nName: %s\nPrice: %s\nQuantity: %s" ,id, countryOfFood, nameOfFood, priceOfFood, quantity);
-
+    public void showAdminFoodData() {
+        System.out.printf(" ID : Country: %s\nName: %s\nPrice: %s", id, countryOfFood, nameOfFood, priceOfFood);
+    }
+    public void showClientFoodData(){
+        System.out.printf(" ID : Country: %s\nName: %s\nPrice: %sQuantitiy: %s" ,id, countryOfFood, nameOfFood, priceOfFood,quantity);
     }
 }

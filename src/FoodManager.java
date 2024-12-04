@@ -1,7 +1,10 @@
 import java.util.ArrayList;
+
 public class FoodManager {
     ArrayList<Food> foods = new ArrayList<>();
     ArrayList<MakeOrder> orders = new ArrayList<>();
+
+
     public void addFood(Food food){
         foods.add(food);
     }
@@ -26,7 +29,7 @@ public class FoodManager {
         }else {
             for (Food food: foods){
                 if (food.getNameOfFood().equals(name)){
-                    food.showFoodData();
+                    food.showAdminFoodData();
                     found = true;
                     break;
                 }
@@ -37,19 +40,35 @@ public class FoodManager {
         }
 
     }
-    public void showAllFood(){
-        for (Food food: foods){
-            food.showFoodData();
+    public void showAllAdminFood(){
+        if (foods.isEmpty()){
+            System.out.println("Not found food!");
+        }else {
+            for (Food food: foods){
+                food.showAdminFoodData();
+            }
+            System.out.println("\n-----------------------------------------");
+        }
+
+    }
+    public void showAllClientFood() {
+        if (foods.isEmpty()) {
+            System.out.println("Not found food!");
+        } else {
+            for (Food food : foods) {
+                food.showAdminFoodData();
+            }
+            System.out.println("\n-----------------------------------------");
         }
     }
     public void orderList(){
+        double totalAmount = 0;
         if (orders.isEmpty()){
             System.out.println("This order is not available!");
         }else {
             System.out.println("Order list: ");
-            for (int i=0;i<foods.size(); i++){
-                if(foods);
-            }
+
+            System.out.println("TotalAmount: "+totalAmount);
         }
     }
     public void showAllHistory(){
